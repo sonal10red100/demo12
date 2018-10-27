@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp"
+    android:background="#1a3e69"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:id="@+id/view_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_row_background"
+        >
+
+        <ImageView
+            android:id="@+id/delete_icon"
+            android:layout_width="@dimen/ic_delete"
+            android:layout_height="@dimen/ic_delete"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/padd_10"
+            android:src="@drawable/del" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/padd_10"
+            android:layout_toLeftOf="@id/delete_icon"
+            android:text="@string/delete"
+            android:textColor="#fff"
+            android:textSize="13dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DELETE"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/padd_10"
+
+            android:textColor="#fff"
+            android:textSize="13dp"
+            />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/view_foreground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:padding="@dimen/padd_10">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="@dimen/cardview_default_elevation"
+        android:layout_gravity="center"
+        card_view:cardCornerRadius="4dp"
+       >
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF">
+
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="108dp"
+        android:layout_height="127dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:layout_width="129dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="0.73">
+
+
+        <TextView
+            android:id="@+id/it"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="10dp"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#1db418" />
+
+        <TextView
+            android:id="@+id/reg"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/pr"
+            android:layout_toRightOf="@id/img"
+            android:text="Regular"
+            android:layout_marginLeft="8dp"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="#897a7a" />
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+        <TextView
+            android:id="@+id/pr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="Price:"
+            android:visibility="visible"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#f22020" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28dp"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="#f22020" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TOTAL:Rs."
+            android:layout_marginLeft="8dp"
+            android:textColor="#f22020"
+            android:textAppearance="?android:textAppearanceSmall"
+            />
+            <TextView
+                android:id="@+id/total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:text="0.0"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="#f22020"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Special Des."
+        android:textColor="#000000"
+        android:background="#FFFFFF"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:id="@+id/sp_des" />
+
+<LinearLayout
+    android:layout_width="108dp"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+
+    <Button
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:text="-"
+        android:layout_marginTop="70dp"
+        android:id="@+id/dec"
+        android:textColor="#000000"
+        android:background="@color/colorPrimaryDark"
+       />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="15dp"
+        android:textColor="#000000"
+        android:id="@+id/t1"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:text="0" />
+    <Button
+        android:id="@+id/inc"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="70dp"
+        android:text="+"
+        android:textColor="#000000"
+        android:background="@color/colorPrimaryDark"
+         />
+        </LinearLayout>
+    </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    </RelativeLayout>
+</FrameLayout>

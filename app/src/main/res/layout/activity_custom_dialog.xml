@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="#aaff39">
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:id="@+id/radiogroup"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/less"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Less Spicy"
+            android:textColor="#283478"/>
+
+        <RadioButton
+            android:id="@+id/med"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Medium Spicy"
+            android:textColor="#283478"/>
+        <RadioButton
+            android:id="@+id/extra"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Extra Spicy"
+            android:textColor="#283478"/>
+        <RadioButton
+            android:id="@+id/jain"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jain"
+            android:layout_marginBottom="20dp"
+            android:textColor="#283478"/>
+
+
+    </RadioGroup>
+
+    <Button
+        android:layout_width="116dp"
+        android:layout_height="33dp"
+        android:id="@+id/sp_submit_button"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:background="#293d6c"
+        android:text="SUBMIT"
+        android:textColor="#FFFFFF" />
+</LinearLayout>
